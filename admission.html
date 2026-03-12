@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admission Form</title>
+<style>
+
+body{
+font-family:Arial;
+background:#eef2f7;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.form-box{
+background:white;
+padding:30px;
+width:400px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+h2{
+text-align:center;
+color:#004aad;
+}
+
+input,select,textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#004aad;
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#003080;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="form-box">
+
+<h2>School Admission Form</h2>
+
+<form>
+
+<input type="text" placeholder="Student Full Name" required>
+
+<input type="text" placeholder="Father Name">
+
+<input type="text" placeholder="Mother Name">
+
+<input type="date">
+
+<select>
+<option>Select Class</option>
+<option>Class 1</option>
+<option>Class 2</option>
+<option>Class 3</option>
+<option>Class 4</option>
+<option>Class 5</option>
+</select>
+
+<input type="text" placeholder="Phone Number">
+
+<textarea placeholder="Address"></textarea>
+
+<button type="submit">Submit Application</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

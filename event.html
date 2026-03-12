@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event Manager</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f6f9;
+padding:40px;
+}
+
+.event-box{
+background:white;
+padding:20px;
+border-radius:10px;
+max-width:600px;
+margin:auto;
+}
+
+input{
+width:100%;
+padding:10px;
+margin:8px 0;
+}
+
+button{
+padding:10px;
+background:#004aad;
+color:white;
+border:none;
+}
+
+li{
+background:#e6f0ff;
+padding:10px;
+margin:5px 0;
+border-radius:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="event-box">
+
+<h2>Event Manager</h2>
+
+<input type="text" id="eventName" placeholder="Event Name">
+
+<input type="date" id="eventDate">
+
+<button onclick="addEvent()">Add Event</button>
+
+<ul id="eventList"></ul>
+
+</div>
+
+<script>
+
+function addEvent(){
+
+let name=document.getElementById("eventName").value;
+
+let date=document.getElementById("eventDate").value;
+
+let li=document.createElement("li");
+
+li.textContent=name + " - " + date;
+
+document.getElementById("eventList").appendChild(li);
+
+}
+
+</script>
+
+</body>
+</html>
